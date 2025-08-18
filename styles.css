@@ -27,9 +27,33 @@ body {
     z-index: 100;
 }
 
-.logo {
-    height: 60px;
-    width: auto;
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-main {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #E31E2D;
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    font-size: 0.75rem;
+    color: #666;
+    font-style: italic;
 }
 
 /* Hero Section */
@@ -78,13 +102,14 @@ body {
     display: inline-block;
     background-color: #E31E2D;
     color: white;
-    padding: 15px 40px;
-    font-size: 1.2rem;
+    padding: 10px 24px;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: 50px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(227, 30, 45, 0.3);
+    white-space: nowrap;
 }
 
 .cta-button:hover {
@@ -103,6 +128,100 @@ body {
     color: #666;
 }
 
+/* Credibility Section */
+.credibility {
+    padding: 50px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.cred-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cred-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cred-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.cred-certifications {
+    font-size: 0.95rem;
+    color: #E31E2D;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Book Focus Section */
+.book-focus {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.book-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book-highlight {
+    margin-bottom: 3rem;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    color: #E31E2D;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.book-highlight h3 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.book-features {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.book-features h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.book-cta {
+    margin-top: 2rem;
+}
+
+.cta-button.large {
+    font-size: 1rem;
+    padding: 10px 24px;
+}
+
+.urgency-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
 /* Benefits Section */
 .benefits {
     padding: 60px 0;
@@ -119,7 +238,8 @@ body {
 .benefits-list {
     max-width: 700px;
     margin: 0 auto;
-    padding-left: 20px;
+    padding-left: 0;
+    list-style: none;
 }
 
 .benefits-list li {
@@ -127,13 +247,16 @@ body {
     margin-bottom: 1rem;
     color: #555;
     position: relative;
-    padding-left: 30px;
+    padding-left: 28px;
+    list-style-type: none;
+    line-height: 1.6;
 }
 
 .benefits-list li:before {
     content: "✓";
     position: absolute;
     left: 0;
+    top: -1px;
     color: #E31E2D;
     font-weight: bold;
     font-size: 1.3rem;
@@ -250,6 +373,82 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Form Section */
+.form-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.form-section h2 {
+    font-size: 2.5rem;
+    color: #E31E2D;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-intro {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: transparent;
+    position: relative;
+}
+
+.form-wrapper iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-fallback {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-fallback a {
+    color: #E31E2D;
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #E31E2D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(227, 30, 45, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #C71826;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(227, 30, 45, 0.4);
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -260,38 +459,198 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .brand-icon {
+        font-size: 1.5rem;
+    }
+    
+    .brand-main {
+        font-size: 1.1rem;
+    }
+    
+    .brand-tagline {
+        font-size: 0.65rem;
+        display: none; /* Hide tagline on very small screens */
+    }
+    
+    @media (min-width: 400px) {
+        .brand-tagline {
+            display: block; /* Show tagline on slightly larger phones */
+        }
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 30px 0;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 30px;
     }
     
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.2;
     }
     
     .hero-text h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
     }
     
     .hero-image {
         order: -1;
+        margin-bottom: 20px;
     }
     
     .hero-image img {
-        max-width: 300px;
+        max-width: 200px;
         margin: 0 auto;
         display: block;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        width: auto;
+        max-width: none;
+        min-width: 200px;
+    }
+    
+    .credibility {
+        padding: 35px 0;
+    }
+    
+    .cred-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .cred-description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .cred-certifications {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+    
+    .book-focus {
+        padding: 40px 0;
+    }
+    
+    .book-highlight h3 {
+        font-size: 1.8rem;
+    }
+    
+    .book-features {
+        padding: 30px 25px;
+        text-align: left;
+    }
+    
+    .book-features h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .book-features .benefits-footer {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    
+    .cta-button.large {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+        width: auto;
+        max-width: none;
+        min-width: 200px;
+    }
+    
+    .benefits, .video-section, .testimonials {
+        padding: 40px 0;
+    }
+    
+    .benefits h2, .video-section h2, .testimonials h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .benefits-list li {
+        font-size: 0.95rem;
+        padding-left: 25px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .benefits-list li:before {
+        font-size: 1.1rem;
     }
     
     .testimonial-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .final-cta {
+        padding: 50px 0;
     }
     
     .final-cta h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+    
+    .final-cta p {
+        font-size: 1rem;
     }
     
     .video-container iframe {
         height: 250px;
+    }
+    
+    .form-section {
+        padding: 40px 0;
+    }
+    
+    .form-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-intro {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .form-wrapper {
+        padding: 0 10px;
+    }
+    
+    .form-wrapper iframe {
+        height: 1400px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
     }
 }
