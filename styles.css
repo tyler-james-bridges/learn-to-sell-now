@@ -34,8 +34,13 @@ body {
 }
 
 .brand-icon {
-    font-size: 2rem;
-    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.brand-icon img {
+    height: 45px;
+    width: auto;
 }
 
 .brand-text {
@@ -70,30 +75,37 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
-    color: #E31E2D;
-    margin-bottom: 1rem;
-    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 .hero-text h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333;
     margin-bottom: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-text h2 em {
+    font-style: italic;
+    color: #E31E2D;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     margin-bottom: 1.5rem;
     color: #555;
 }
 
 .hero-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     border-radius: 8px;
 }
 
@@ -124,41 +136,59 @@ body {
 
 .cta-subtext {
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #666;
 }
 
 /* Credibility Section */
 .credibility {
-    padding: 50px 0;
+    padding: 60px 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
 }
 
 .cred-content {
-    text-align: center;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.cred-content h3 {
-    font-size: 1.8rem;
+.coach-text h2 {
+    font-size: 2rem;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
-.cred-description {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1rem;
+.coach-text p {
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 1.2rem;
     line-height: 1.6;
+    text-align: left;
 }
 
-.cred-certifications {
-    font-size: 0.95rem;
-    color: #E31E2D;
-    font-weight: 600;
-    font-style: italic;
+.coach-image {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 60px;
+}
+
+.coach-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.coach-cta {
+    text-align: center;
+    margin-top: 3rem;
 }
 
 /* Book Focus Section */
@@ -173,37 +203,52 @@ body {
     text-align: center;
 }
 
-.book-highlight {
-    margin-bottom: 3rem;
+.book-content h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-.book-title {
-    font-size: 1.2rem;
-    color: #E31E2D;
-    letter-spacing: 2px;
-    margin-bottom: 0.5rem;
+.book-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.preview-edition {
+    font-size: 1.125rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.book-intro {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-intro em {
+    font-style: italic;
     font-weight: 600;
 }
 
-.book-highlight h3 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
 .book-features {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .book-features h4 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     color: #333;
     margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
 .book-cta {
@@ -237,37 +282,39 @@ body {
 
 .benefits-list {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     padding-left: 0;
     list-style: none;
+    text-align: left;
 }
 
 .benefits-list li {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     margin-bottom: 1rem;
-    color: #555;
+    color: #333;
     position: relative;
-    padding-left: 28px;
+    padding-left: 30px;
     list-style-type: none;
     line-height: 1.6;
 }
 
 .benefits-list li:before {
-    content: "✓";
+    content: "•";
     position: absolute;
-    left: 0;
-    top: -1px;
-    color: #E31E2D;
+    left: 10px;
+    top: 0;
+    color: #333;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .benefits-footer {
     text-align: center;
     margin-top: 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: #333;
+    line-height: 1.4;
 }
 
 /* Video Section */
@@ -331,14 +378,14 @@ body {
 }
 
 .testimonial-text {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-style: italic;
     color: #555;
     margin-bottom: 1rem;
 }
 
 .testimonial-author {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #E31E2D;
     font-weight: 600;
 }
@@ -380,14 +427,14 @@ body {
 }
 
 .form-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #E31E2D;
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .form-intro {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     color: #555;
     text-align: center;
     margin-bottom: 3rem;
@@ -463,8 +510,8 @@ footer {
         padding: 0.75rem 0;
     }
     
-    .brand-icon {
-        font-size: 1.5rem;
+    .brand-icon img {
+        height: 35px;
     }
     
     .brand-main {
@@ -497,12 +544,12 @@ footer {
     }
     
     .hero-text h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 1.2;
     }
     
     .hero-text h2 {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         line-height: 1.4;
     }
     
@@ -516,16 +563,16 @@ footer {
     }
     
     .hero-image img {
-        max-width: 200px;
+        max-width: 250px;
         margin: 0 auto;
         display: block;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        border-radius: 8px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     }
     
     .cta-button {
         padding: 10px 20px;
-        font-size: 0.95rem;
+        font-size: 1rem;
         width: auto;
         max-width: none;
         min-width: 200px;
@@ -536,7 +583,7 @@ footer {
     }
     
     .cred-content h3 {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
     }
     
     .cred-description {
@@ -545,7 +592,7 @@ footer {
     }
     
     .cred-certifications {
-        font-size: 0.85rem;
+        font-size: 0.875rem;
         padding: 0 10px;
     }
     
@@ -554,7 +601,7 @@ footer {
     }
     
     .book-highlight h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .book-features {
@@ -563,7 +610,7 @@ footer {
     }
     
     .book-features h4 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         text-align: center;
         margin-bottom: 1.5rem;
     }
@@ -574,7 +621,7 @@ footer {
     }
     
     .cta-button.large {
-        font-size: 0.95rem;
+        font-size: 1rem;
         padding: 10px 20px;
         width: auto;
         max-width: none;
@@ -591,13 +638,14 @@ footer {
     }
     
     .benefits-list li {
-        font-size: 0.95rem;
+        font-size: 1rem;
         padding-left: 25px;
         margin-bottom: 1.2rem;
     }
     
     .benefits-list li:before {
         font-size: 1.1rem;
+        left: 5px;
     }
     
     .testimonial-grid {
@@ -607,6 +655,24 @@ footer {
     
     .testimonial-card {
         padding: 20px;
+    }
+    
+    .cred-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .coach-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .coach-image {
+        padding-top: 0;
+        margin-top: 2rem;
+    }
+    
+    .coach-image img {
+        max-width: 300px;
     }
     
     .final-cta {
@@ -630,7 +696,7 @@ footer {
     }
     
     .form-section h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .form-intro {
