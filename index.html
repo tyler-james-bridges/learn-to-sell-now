@@ -197,7 +197,7 @@
                     <iframe id="surveymonkey-form"
                             src="https://www.surveymonkey.com/r/6NV22W8" 
                             width="100%" 
-                            height="1300" 
+                            height="700" 
                             frameborder="0" 
                             scrolling="no"
                             style="overflow: hidden;"
@@ -238,7 +238,11 @@
         setTimeout(function() {
             const iframe = document.getElementById('surveymonkey-form');
             // Set to optimal height for form content
-            iframe.style.height = (window.innerWidth < 768 ? '1400px' : '1300px');
+            if (window.innerWidth < 768) {
+                iframe.style.height = '800px';
+            } else {
+                iframe.style.height = '700px';
+            }
         }, 3000);
         
         // Smooth scroll to form when CTA buttons are clicked

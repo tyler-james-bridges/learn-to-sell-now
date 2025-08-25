@@ -692,24 +692,31 @@ footer {
     }
     
     .form-section {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     
     .form-section h2 {
         font-size: 1.5rem;
+        margin-bottom: 0.75rem;
     }
     
     .form-intro {
         font-size: 1rem;
         padding: 0 15px;
+        margin-bottom: 2rem;
     }
     
     .form-wrapper {
-        padding: 0 10px;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
     }
     
     .form-wrapper iframe {
-        height: 1400px;
+        height: 800px;
+        min-height: 700px;
+        width: 100% !important;
+        max-width: 100%;
     }
     
     .back-to-top {
