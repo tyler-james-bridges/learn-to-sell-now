@@ -1,9 +1,12 @@
 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" fill="#E31E2D" rx="4"/>
-  <!-- Growth chart bars -->
-  <rect x="4" y="18" width="4" height="8" fill="white"/>
-  <rect x="10" y="14" width="4" height="12" fill="white"/>
-  <rect x="16" y="10" width="4" height="16" fill="white"/>
-  <!-- Dollar symbol -->
-  <text x="26" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">$</text>
+  <!-- Hexagon background matching logo -->
+  <path d="M16 2 L27.4 8 L27.4 20 L16 26 L4.6 20 L4.6 8 Z" fill="#DC2626" stroke="#DC2626" stroke-width="1"/>
+  
+  <!-- Inner white area for contrast -->
+  <path d="M16 5 L25 9.5 L25 18.5 L16 23 L7 18.5 L7 9.5 Z" fill="white"/>
+  
+  <!-- Growth chart bars - matching logo style -->
+  <rect x="10" y="15" width="3.5" height="5" fill="#1a1a1a" rx="0.3"/>
+  <rect x="14.25" y="12" width="3.5" height="8" fill="#1a1a1a" rx="0.3"/>
+  <rect x="18.5" y="9" width="3.5" height="11" fill="#1a1a1a" rx="0.3"/>
 </svg>
