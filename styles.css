@@ -27,10 +27,54 @@ body {
     z-index: 100;
 }
 
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-brand {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    color: #E31E2D;
+}
+
+.nav-menu a.active {
+    color: #E31E2D;
+    background-color: rgba(227, 30, 45, 0.1);
 }
 
 .brand-icon {
@@ -501,6 +545,243 @@ body {
     box-shadow: 0 6px 20px rgba(227, 30, 45, 0.4);
 }
 
+/* Pricing Elements */
+.price-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.price-special {
+    color: #E31E2D;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Purchase Box */
+.purchase-box {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.purchase-summary h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.purchase-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.purchase-item .price {
+    font-weight: 600;
+    color: #E31E2D;
+}
+
+.purchase-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.purchase-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.purchase-button {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+.secure-text {
+    margin-top: 15px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.guarantee-text {
+    margin-top: 10px;
+    color: #27ae60;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Guarantee Box */
+.guarantee {
+    padding: 60px 0;
+    background-color: #f0f8f0;
+}
+
+.guarantee-box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #27ae60;
+}
+
+.guarantee-box h2 {
+    color: #27ae60;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.guarantee-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Coaching Packages */
+.coaching-packages {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.package-card.featured {
+    border: 2px solid #E31E2D;
+    transform: scale(1.05);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #E31E2D;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.package-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.package-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E31E2D;
+    margin-bottom: 10px;
+}
+
+.package-duration {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.package-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.package-button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Coaching Form */
+.coaching-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #E31E2D;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -514,20 +795,35 @@ footer {
     .navbar {
         padding: 0.75rem 0;
     }
-    
+
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .nav-menu a {
+        padding: 3px 8px;
+        font-size: 0.9rem;
+    }
+
     .brand-icon img {
         height: 35px;
     }
-    
+
     .brand-main {
         font-size: 1.1rem;
     }
-    
+
     .brand-tagline {
         font-size: 0.65rem;
         display: none; /* Hide tagline on very small screens */
     }
-    
+
     @media (min-width: 400px) {
         .brand-tagline {
             display: block; /* Show tagline on slightly larger phones */

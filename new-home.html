@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn To Sell NOW! - Transform Your Sales Skills Today</title>
+    <meta name="description" content="Master the art of selling with Dave Sherman's proven strategies. Free resources, comprehensive guides, and personalized coaching for sales success.">
+    <link rel="canonical" href="https://learntosellnow.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://learntosellnow.com/">
+    <meta property="og:title" content="Learn To Sell NOW! - Transform Your Sales Skills Today">
+    <meta property="og:description" content="Master the art of selling with Dave Sherman's proven strategies. Free resources, comprehensive guides, and personalized coaching.">
+    <meta property="og:image" content="https://learntosellnow.com/images/dave_profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://learntosellnow.com/">
+    <meta property="twitter:title" content="Learn To Sell NOW! - Transform Your Sales Skills Today">
+    <meta property="twitter:description" content="Master the art of selling with Dave Sherman's proven strategies. Free resources, comprehensive guides, and personalized coaching.">
+    <meta property="twitter:image" content="https://learntosellnow.com/images/dave_profile.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        .hero-home {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            padding: 30px 20px 25px;
+        }
+
+        .hero-home .hero-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-home h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #333;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-home h1 br {
+            display: block;
+            content: "";
+            margin-top: -0.2em;
+        }
+
+        .hero-home .subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.35rem);
+            color: #666;
+            margin-bottom: 1.8rem;
+            font-weight: 400;
+            padding: 0 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .offerings {
+            padding: 30px 20px;
+            background: #fff;
+        }
+
+        .offerings h2 {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.25rem);
+            color: #333;
+            margin-bottom: 1.8rem;
+            padding: 0 20px;
+        }
+
+        .offerings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .offering-card {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 28px 22px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .offering-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .offering-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .offering-card h3 {
+            font-size: 1.35rem;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .offering-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.55;
+            margin-bottom: 22px;
+            min-height: 85px;
+        }
+
+        .offering-card .cta-button {
+            display: inline-block;
+            width: auto;
+            min-width: 140px;
+            padding: 10px 22px;
+            font-size: 0.95rem;
+        }
+
+        .dave-intro {
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+        }
+
+        .dave-intro.hero-section {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        .dave-intro-content {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .dave-intro-image {
+            text-align: center;
+        }
+
+        .dave-intro-image img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .dave-intro-text h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #333;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .dave-intro-text h2 {
+            font-size: 2.25rem;
+            color: #333;
+            margin-bottom: 1.25rem;
+            font-weight: 600;
+        }
+
+        .dave-intro-text p {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.65;
+            margin-bottom: 1.25rem;
+        }
+
+        .credentials {
+            display: flex;
+            gap: 35px;
+            margin-top: 25px;
+            flex-wrap: nowrap;
+        }
+
+        .credential-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        .credential-icon {
+            color: #27ae60;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .why-choose {
+            padding: 30px 20px;
+            background: #fff;
+        }
+
+        .why-choose h2 {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.25rem);
+            color: #333;
+            margin-bottom: 1.8rem;
+            padding: 0 20px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .why-item-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: #E31E2D;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .why-item h3 {
+            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .why-item p {
+            font-size: clamp(0.9rem, 2vw, 0.95rem);
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Large Desktop - keep everything looking good on wide screens */
+        @media (min-width: 1400px) {
+            .offerings-grid,
+            .dave-intro-content,
+            .why-grid {
+                max-width: 1200px;
+            }
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1024px) {
+            .offerings-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .dave-intro-content {
+                grid-template-columns: 300px 1fr;
+                gap: 40px;
+            }
+
+            .credentials {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-home {
+                padding: 50px 20px;
+            }
+
+            .offerings {
+                padding: 50px 20px;
+            }
+
+            .dave-intro {
+                padding: 50px 20px;
+            }
+
+            .dave-intro-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .dave-intro-image {
+                order: -1;
+            }
+
+            .credentials {
+                justify-content: center;
+            }
+
+            .why-choose {
+                padding: 50px 20px;
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .hero-home {
+                padding: 40px 15px;
+            }
+
+            .hero-home h1 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-home h1 br {
+                display: none;
+            }
+
+            .hero-home .subtitle {
+                font-size: 1.1rem;
+                padding: 0 10px;
+                margin-bottom: 1.5rem;
+            }
+
+            .offerings {
+                padding: 40px 15px;
+            }
+
+            .offerings h2 {
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+                padding: 0 10px;
+            }
+
+            .offerings-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 10px;
+            }
+
+            .offering-card {
+                padding: 30px 20px;
+            }
+
+            .offering-card p {
+                min-height: auto;
+            }
+
+            .dave-intro {
+                padding: 40px 15px;
+            }
+
+            .dave-intro-content {
+                padding: 0 10px;
+                gap: 30px;
+            }
+
+            .dave-intro-image img {
+                max-width: 280px;
+            }
+
+            .dave-intro-text h2 {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .dave-intro-text p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .credentials {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .credential-item {
+                font-size: 0.95rem;
+            }
+
+            .why-choose {
+                padding: 40px 15px;
+            }
+
+            .why-choose h2 {
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 10px;
+            }
+
+            .why-item {
+                padding: 15px;
+            }
+
+            .why-item-number {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 1.3rem;
+            }
+
+            .why-item h3 {
+                font-size: 1.15rem;
+            }
+
+            .why-item p {
+                font-size: 0.9rem;
+            }
+
+            /* Adjust testimonials section for mobile */
+            .testimonials {
+                padding: 40px 15px;
+            }
+
+            .testimonials h2 {
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+            }
+
+            .final-cta {
+                padding: 50px 15px;
+            }
+
+            .final-cta h2 {
+                font-size: 1.75rem;
+            }
+
+            .final-cta p {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+        }
+
+        /* Small Mobile Styles */
+        @media (max-width: 480px) {
+            .hero-home h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-home .subtitle {
+                font-size: 1rem;
+            }
+
+            .offering-card {
+                padding: 25px 15px;
+            }
+
+            .offering-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8rem;
+            }
+
+            .dave-intro-text h2 {
+                font-size: 1.5rem;
+            }
+
+            .cta-button {
+                font-size: 0.95rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="header-brand">
+                        <a href="new-home.html" class="brand-link">
+                            <div class="brand-icon">
+                                <img src="images/ltsn-logo.jpg" alt="Learn To Sell NOW! Logo">
+                            </div>
+                            <div class="brand-text">
+                                <span class="brand-main">Learn To Sell NOW!</span>
+                                <span class="brand-tagline">Simple Steps to Confident Selling</span>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="free-ebook.html">Free E-Book</a></li>
+                        <li><a href="paid-ebook.html">Full E-Book</a></li>
+                        <li><a href="coaching.html">Coaching</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section - Meet Dave Sherman -->
+        <section class="dave-intro hero-section">
+            <div class="container">
+                <div class="dave-intro-content">
+                    <div class="dave-intro-image">
+                        <img src="images/dave_profile.jpg" alt="Dave Sherman - Your Sales Coach">
+                    </div>
+                    <div class="dave-intro-text">
+                        <h1>Meet Dave Sherman</h1>
+                        <p>
+                            <strong>Your guide to sales success.</strong> With over four decades in sales and 20+ years
+                            coaching thousands of beginners, Dave Sherman has mastered the art of turning nervous
+                            newcomers into confident sales professionals.
+                        </p>
+                        <p>
+                            From selling raffle tickets at age seven to building successful sales teams across
+                            multiple industries, Dave's journey has equipped him with real-world insights that
+                            textbooks can't teach. His approach is simple: make sales approachable, practical,
+                            and achievable for everyone.
+                        </p>
+                        <div class="credentials">
+                            <div class="credential-item">
+                                <span class="credential-icon">✓</span>
+                                <span>40+ Years Sales Experience</span>
+                            </div>
+                            <div class="credential-item">
+                                <span class="credential-icon">✓</span>
+                                <span>20+ Years Training & Coaching</span>
+                            </div>
+                            <div class="credential-item">
+                                <span class="credential-icon">✓</span>
+                                <span>1000s of Success Stories</span>
+                            </div>
+                        </div>
+                        <div class="cta-section" style="margin-top: 30px;">
+                            <a href="free-ebook.html" class="cta-button">Start with Our FREE E-Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Offer -->
+        <section class="offerings">
+            <div class="container">
+                <h2>Choose Your Path to Sales Success</h2>
+                <div class="offerings-grid">
+                    <div class="offering-card">
+                        <div class="offering-icon">📖</div>
+                        <h3>Free E-Book Preview</h3>
+                        <p>
+                            Start your journey with our FREE preview edition. Get a taste of Dave's proven
+                            methodology with practical tips you can use immediately. Perfect for beginners
+                            who want to test the waters.
+                        </p>
+                        <a href="free-ebook.html" class="cta-button">Get Free Preview</a>
+                    </div>
+
+                    <div class="offering-card">
+                        <div class="offering-icon">📚</div>
+                        <h3>Complete E-Book Guide</h3>
+                        <p>
+                            Ready to master sales? The full edition includes 12 comprehensive chapters,
+                            ready-to-use scripts, tracking tools, and a 30-day action plan. Everything
+                            you need to succeed.
+                        </p>
+                        <a href="paid-ebook.html" class="cta-button">Get Full Guide</a>
+                    </div>
+
+                    <div class="offering-card">
+                        <div class="offering-icon">🎯</div>
+                        <h3>1-on-1 Coaching</h3>
+                        <p>
+                            Accelerate your results with personalized coaching. Work directly with Dave
+                            to develop your unique style, overcome challenges, and achieve breakthrough
+                            performance.
+                        </p>
+                        <a href="coaching.html" class="cta-button">Explore Coaching</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Learn To Sell NOW -->
+        <section class="why-choose">
+            <div class="container">
+                <h2>Why Learn To Sell NOW?</h2>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-item-number">1</div>
+                        <h3>Proven Methods</h3>
+                        <p>Time-tested strategies that have worked for thousands of beginners across industries</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-item-number">2</div>
+                        <h3>Step-by-Step Approach</h3>
+                        <p>Clear, actionable guidance that takes you from nervous to confident systematically</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-item-number">3</div>
+                        <h3>Real-World Focus</h3>
+                        <p>Practical techniques you can implement immediately, not just theory</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-item-number">4</div>
+                        <h3>Ongoing Support</h3>
+                        <p>From free resources to personal coaching, we're with you every step of the way</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Success Stories from Our Community</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Dave's methods transformed my career. I went from dreading sales calls
+                            to becoming top performer in just 3 months."
+                        </p>
+                        <p class="testimonial-author">— Michael R., Software Sales</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "The free e-book alone gave me more practical advice than my entire
+                            college business course. Worth every minute."
+                        </p>
+                        <p class="testimonial-author">— Sarah L., Real Estate</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Dave's coaching helped me launch my consulting business. First month:
+                            5 clients. His system simply works."
+                        </p>
+                        <p class="testimonial-author">— Thomas K., Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Ready to Start Your Sales Journey?</h2>
+                <p>Join thousands who have transformed their careers with our proven system</p>
+                <a href="free-ebook.html" class="cta-button">Get Your FREE E-Book Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Learn To Sell NOW! All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script>
+        // Show/hide back to top button based on scroll position
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+
+            // Handle back to top button click
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -3,29 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn To Sell NOW! - A Beginner's Guide to Successful Selling</title>
-    <meta name="description" content="Unlock the confidence, skills, and strategy to start selling today. Get your FREE ebook now!">
-    <link rel="canonical" href="https://learntosellnow.com/">
-    
+    <title>Sales Coaching - Learn To Sell NOW!</title>
+    <meta name="description" content="Accelerate your sales success with personalized coaching from Dave Sherman. Transform your skills with 1-on-1 guidance.">
+    <link rel="canonical" href="https://learntosellnow.com/coaching.html">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://learntosellnow.com/">
-    <meta property="og:title" content="Learn To Sell NOW! - A Beginner's Guide to Successful Selling">
-    <meta property="og:description" content="Unlock the confidence, skills, and strategy to start selling today. Get your FREE ebook now!">
-    <meta property="og:image" content="https://learntosellnow.com/images/ebook.png">
+    <meta property="og:url" content="https://learntosellnow.com/coaching.html">
+    <meta property="og:title" content="Sales Coaching - Learn To Sell NOW!">
+    <meta property="og:description" content="Accelerate your sales success with personalized coaching from Dave Sherman.">
+    <meta property="og:image" content="https://learntosellnow.com/images/dave_profile.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://learntosellnow.com/">
-    <meta property="twitter:title" content="Learn To Sell NOW! - A Beginner's Guide to Successful Selling">
-    <meta property="twitter:description" content="Unlock the confidence, skills, and strategy to start selling today. Get your FREE ebook now!">
-    <meta property="twitter:image" content="https://learntosellnow.com/images/ebook.png">
-    
+    <meta property="twitter:url" content="https://learntosellnow.com/coaching.html">
+    <meta property="twitter:title" content="Sales Coaching - Learn To Sell NOW!">
+    <meta property="twitter:description" content="Accelerate your sales success with personalized coaching from Dave Sherman.">
+    <meta property="twitter:image" content="https://learntosellnow.com/images/dave_profile.jpg">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Clean Coaching Packages Styles */
+        .coaching-packages {
+            padding: 60px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .package-card.featured {
+            border: 2px solid #E31E2D;
+            transform: scale(1.02);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #E31E2D;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .package-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #E31E2D;
+            margin-bottom: 10px;
+        }
+
+        .package-duration {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+
+        .package-button {
+            width: 100%;
+            margin-top: auto;
+            padding: 14px 30px;
+            background: #E31E2D;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .package-button:hover {
+            background: #C71826;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(227, 30, 45, 0.3);
+        }
+
+        /* Simple form styles */
+        .simple-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #E31E2D;
+        }
+
+        @media (max-width: 992px) {
+            .packages-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .package-card.featured {
+                transform: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,167 +202,129 @@
                             </div>
                         </a>
                     </div>
+                    <ul class="nav-menu">
+                        <li><a href="free-ebook.html">Free E-Book</a></li>
+                        <li><a href="paid-ebook.html">Full E-Book</a></li>
+                        <li><a href="coaching.html" class="active">Coaching</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>New to Sales? Your Journey to Sales Success begins with this FREE E-Book</h1>
-                        <h2>Unlock the Confidence, Skills and Strategy to Start Selling Today with <em>"A&nbsp;Beginners Guide to Successful Selling!"</em></h2>
-                        
+                        <h1>Personal Sales Coaching</h1>
+                        <h2>Transform Your Sales Skills with 1-on-1 Guidance</h2>
+
                         <p class="hero-description">
-                            Selling doesn't have to feel overwhelming. Whether you're starting a side hustle, 
-                            launching a new career, or simply want to improve your ability to connect and 
-                            persuade, this guide was designed for beginners who want results without confusion.
+                            Work directly with Dave Sherman to develop your unique sales style
+                            and achieve breakthrough performance.
                         </p>
 
                         <div class="cta-section">
-                            <a href="#form" class="cta-button scroll-to-form">
-                                Get Your FREE E-Book Now
+                            <a href="#packages" class="cta-button scroll-to-form">
+                                View Coaching Options
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="hero-image">
-                        <img src="images/ebook.png" alt="A Beginner's Guide to Successful Selling Book Cover">
+                        <img src="images/dave_profile.jpg" alt="Dave Sherman - Sales Coach">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="video-section">
+        <!-- Coaching Packages -->
+        <section id="packages" class="coaching-packages">
             <div class="container">
-                <h2>Watch This Quick Introduction</h2>
-                <div class="video-container">
-                    <video controls width="100%" height="100%">
-                        <source src="videos/Landing Page Introduction Video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </section>
-
-        <section class="book-focus">
-            <div class="container">
-                <div class="book-content">
-                    <h2>Why This FREE <span style="white-space: nowrap;">E-Book?</span></h2>
-                    <h3>The Beginners Guide to Successful Selling<br>
-                    <span class="preview-edition">Preview Edition</span></h3>
-                    
-                    <p class="book-intro">
-                        This free <em>Preview Edition</em> (about a quarter of the full book) gives you a taste of what's possible 
-                        when you have the right tools and mindset. You'll walk away with practical tips you can use right 
-                        away and a clear picture of what's ahead when you're ready to dive deeper.
-                    </p>
-                    
-                    <div class="book-features">
-                        <h4>What You'll Learn:</h4>
-                        <ul class="benefits-list">
-                            <li>Simple, step-by-step strategies for selling, even if you've never sold before</li>
-                            <li>How to build confidence and overcome the fear of rejection</li>
-                            <li>Proven techniques to connect with customers and earn trust</li>
-                            <li>Practical tips you can use immediately to boost results</li>
+                <h2 style="text-align: center; margin-bottom: 50px;">Choose Your Coaching Package</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <h3>Starter Session</h3>
+                        <div class="package-price">$TBD</div>
+                        <div class="package-duration">TBD Session</div>
+                        <ul class="package-features">
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
                         </ul>
-                        
-                        <p class="benefits-footer">
-                            <strong>This isn't theory, it's a practical, step-by-step playbook for<br>
-                            beginners who want results fast.</strong>
-                        </p>
+                        <button class="package-button" data-package="starter">
+                            Get Started
+                        </button>
                     </div>
-                    
-                    <div class="book-cta">
-                        <a href="#form" class="cta-button scroll-to-form">
-                            Get Your FREE E-Book Now
-                        </a>
+
+                    <div class="package-card featured">
+                        <div class="featured-badge">Most Popular</div>
+                        <h3>Success Package</h3>
+                        <div class="package-price">$TBD</div>
+                        <div class="package-duration">TBD Sessions</div>
+                        <ul class="package-features">
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                        </ul>
+                        <button class="package-button" data-package="success">
+                            Get Started
+                        </button>
+                    </div>
+
+                    <div class="package-card">
+                        <h3>Premium Program</h3>
+                        <div class="package-price">$TBD</div>
+                        <div class="package-duration">TBD Sessions</div>
+                        <ul class="package-features">
+                            <li>TBD</li>
+                            <li>TBD</li>
+                            <li>TBD</li>
+                        </ul>
+                        <button class="package-button" data-package="premium">
+                            Get Started
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="credibility">
-            <div class="container">
-                <div class="cred-content">
-                    <div class="coach-text">
-                        <h2>Meet Your Sales Coach</h2>
-                        <p>
-                            Hi, I'm <strong>Dave Sherman</strong>, and I've been selling for as long 
-                            as I can remember, literally. My first "sales job" was at 
-                            seven years old, going door to door, selling raffle tickets 
-                            for one of my mom's charities. By 1980, I was knocking 
-                            on doors again, this time selling $600 vacuum 
-                            cleaners. It was tough, but it taught me lessons about 
-                            persistence, confidence, and connecting with people 
-                            that I still use today.
-                        </p>
-                        <p>
-                            For the past 20+ years, I've shifted my focus to <strong>helping 
-                            others succeed in sales</strong>. I've trained and coached 
-                            thousands of beginners, people just like you, who felt 
-                            nervous, unprepared, or unsure if they had what it 
-                            takes to sell. Watching them transform from hesitant to 
-                            confident is the reason I love what I do.
-                        </p>
-                        <p>
-                            I created <em>A Beginner's Guide to Successful Selling</em> 
-                            because I know how overwhelming sales can seem 
-                            when you're starting out. My goal is simple: <strong>to make 
-                            sales easy to understand, approachable, and practical</strong>, 
-                            so you can take your first steps toward success with 
-                            confidence.
-                        </p>
-                    </div>
-                    <div class="coach-image">
-                        <img src="images/dave_profile.jpg" alt="Dave Sherman">
-                    </div>
-                </div>
-                <div class="coach-cta">
-                    <a href="#form" class="cta-button scroll-to-form">
-                        Get Your FREE E-Book Now
-                    </a>
-                </div>
-            </div>
-        </section>
-
+        <!-- Testimonials -->
         <section class="testimonials">
             <div class="container">
-                <h2>What Our Readers Are Saying</h2>
+                <h2>Coaching Success Stories</h2>
                 <div class="testimonial-grid">
                     <div class="testimonial-card">
                         <p class="testimonial-text">
-                            "I closed my first deal two days after finishing the e-book. 
-                            It gave me the confidence I needed."
+                            "TBD testimonial content"
                         </p>
-                        <p class="testimonial-author">— Lena T., Chicago, IL</p>
+                        <p class="testimonial-author">— TBD Name</p>
                     </div>
-                    
+
                     <div class="testimonial-card">
                         <p class="testimonial-text">
-                            "Dave's approach is clear, practical, and empowering. 
-                            I wish I had this when I started out."
+                            "TBD testimonial content"
                         </p>
-                        <p class="testimonial-author">— Mark D., Toronto, ON</p>
+                        <p class="testimonial-author">— TBD Name</p>
                     </div>
-                    
+
                     <div class="testimonial-card">
                         <p class="testimonial-text">
-                            "This isn't just a sales guide, it's a mindset shift. 
-                            I feel like a different person when I sell now."
+                            "TBD testimonial content"
                         </p>
-                        <p class="testimonial-author">— Priya S., Vancouver, BC</p>
+                        <p class="testimonial-author">— TBD Name</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="form" class="form-section">
+        <!-- Contact Form -->
+        <section id="application" class="form-section">
             <div class="container">
-                <h2>Get Your FREE E-Book Now!</h2>
-                <p class="form-intro">Complete this quick form to receive your copy instantly</p>
+                <h2>Ready to Start Your Coaching Journey?</h2>
+                <p class="form-intro">Enter your details below to schedule a discovery call</p>
                 <div class="form-wrapper">
                     <!-- Mailchimp Signup Form -->
                     <div id="mc_embed_shell">
@@ -310,7 +431,7 @@
                                         <input type="text" name="b_5023be6d4c346e51bd65c35d1_4674027b6f" tabindex="-1" value="">
                                     </div>
                                     <div class="clear">
-                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Get My Free E-Book">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Request Coaching Info">
                                     </div>
                                 </div>
                             </form>
@@ -328,32 +449,45 @@
             <p>&copy; 2025 Learn To Sell NOW! All rights reserved.</p>
         </div>
     </footer>
-    
+
     <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top" aria-label="Back to top">
         ↑
     </button>
-    
+
     <script>
-        // Smooth scroll to form when CTA buttons are clicked
+        // Smooth scroll and form handling
         document.addEventListener('DOMContentLoaded', function() {
             const scrollButtons = document.querySelectorAll('.scroll-to-form');
             const backToTopButton = document.getElementById('back-to-top');
-            
-            // Handle CTA button clicks
+            const packageButtons = document.querySelectorAll('.package-button');
+            const coachingForm = document.getElementById('coaching-inquiry');
+
+            // Handle scroll to packages
             scrollButtons.forEach(button => {
                 button.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const formSection = document.getElementById('form');
-                    
-                    formSection.scrollIntoView({
+                    const packagesSection = document.getElementById('packages');
+                    packagesSection.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
                 });
             });
-            
-            // Show/hide back to top button based on scroll position
+
+            // Handle package button clicks
+            packageButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const applicationSection = document.getElementById('application');
+
+                    applicationSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+
+            // Show/hide back to top button
             window.addEventListener('scroll', function() {
                 if (window.pageYOffset > 300) {
                     backToTopButton.classList.add('visible');
@@ -361,7 +495,7 @@
                     backToTopButton.classList.remove('visible');
                 }
             });
-            
+
             // Handle back to top button click
             backToTopButton.addEventListener('click', function() {
                 window.scrollTo({
