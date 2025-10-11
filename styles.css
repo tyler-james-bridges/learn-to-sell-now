@@ -441,14 +441,15 @@ body {
 /* Final CTA Section */
 .final-cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, #E31E2D 0%, #C71826 100%);
-    color: white;
+    background: #ffffff;
+    color: #333;
     text-align: center;
 }
 
 .final-cta h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #333;
 }
 
 .final-cta p {
@@ -457,15 +458,16 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: #333;
 }
 
 .final-cta .cta-button {
-    background-color: white;
-    color: #E31E2D;
+    background-color: #E31E2D;
+    color: white;
 }
 
 .final-cta .cta-button:hover {
-    background-color: #f0f0f0;
+    background-color: #C71826;
 }
 
 /* Form Section */
